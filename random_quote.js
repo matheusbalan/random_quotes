@@ -3,7 +3,7 @@ var http = require('http');
 
 http.createServer(function (req, res) {
   request('https://api.kanye.rest', function (error, response, body) {
-  res.writeHead(200, {'Content-Type': 'text/html'});
+  res.writeHead(200, {'Content-Type': 'text/html; charset=utf-8'});
   
   if (error) 
       res.end("Couldn't connect to https://api.kanye.rest");
